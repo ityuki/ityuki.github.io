@@ -4,9 +4,10 @@
   if (location.pathname == '/ityuki.github.io' || location.pathname == '/ityuki.github.io/' ||  location.pathname == '/ityuki.github.io/index.html' || 
       location.pathname == "/" || location.pathname == "/index.html"){
     window.location.replace(location.origin + "/pages/);
-  }
-  if (null != location.pathname.match('/ityuki.github.io')) {
+  }else if (null != location.pathname.match('/ityuki.github.io')) {
     window.location.replace(location.origin + location.pathname.replace('/ityuki.github.io', ''));
+  }else{
+    window.location.replace(location.origin + "/pages/);
   }
 </script>
 <title>github.io to pages</title>
